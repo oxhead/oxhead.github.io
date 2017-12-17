@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0xhead on 0xhead</title>
+    <link>https://oxhead.github.io/</link>
+    <description>Recent content in 0xhead on 0xhead</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Chin-Jung Hsu</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Trilogy: Data Placement to Improve Performance and Robustness of Cloud Computing</title>
+      <link>https://oxhead.github.io/publication/trilogy/</link>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://oxhead.github.io/publication/trilogy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pisces: A P2P Meta-Grid System</title>
+      <link>https://oxhead.github.io/project/pisces/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://oxhead.github.io/project/pisces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>https://oxhead.github.io/talk/example-talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://oxhead.github.io/talk/example-talk/</guid>
+      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://sourcethemes.com/academic/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inside-Out: Reliable Performance Prediction for Distributed Storage Systems in the Cloud</title>
+      <link>https://oxhead.github.io/publication/inside-out/</link>
+      <pubDate>Mon, 26 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://oxhead.github.io/publication/inside-out/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Novel Approach for Cooperative Overlay-Maintenance in Multi-Overlay Environments </title>
+      <link>https://oxhead.github.io/publication/cooperative-overlay/</link>
+      <pubDate>Tue, 30 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://oxhead.github.io/publication/cooperative-overlay/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
