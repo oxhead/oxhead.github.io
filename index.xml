@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Low-Level Augmented Bayesian Optimization for Finding the Best Cloud VM</title>
+      <link>https://oxhead.github.io/publication/abo/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://oxhead.github.io/publication/abo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Trilogy: Data Placement to Improve Performance and Robustness of Cloud Computing</title>
       <link>https://oxhead.github.io/publication/trilogy/</link>
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
