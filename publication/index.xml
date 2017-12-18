@@ -38,6 +38,24 @@
     </item>
     
     <item>
+      <title>Evaluation of MapReduce in a large cluster</title>
+      <link>https://oxhead.github.io/publication/mapreduce-evaluation/</link>
+      <pubDate>Sat, 27 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://oxhead.github.io/publication/mapreduce-evaluation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flow Scheduling: An Efficient Scheduling Method for MapReduce Framework in the Decoupled Architecture</title>
+      <link>https://oxhead.github.io/publication/flow-scheduling/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://oxhead.github.io/publication/flow-scheduling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Novel Approach for Cooperative Overlay-Maintenance in Multi-Overlay Environments </title>
       <link>https://oxhead.github.io/publication/cooperative-overlay/</link>
       <pubDate>Tue, 30 Nov 2010 00:00:00 +0000</pubDate>
