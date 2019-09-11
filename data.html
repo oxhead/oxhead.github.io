@@ -80,6 +80,9 @@ var svg = d3.select("body").append("svg")
 };
 
 var lineItemId = getUrlParameter('lineItemId');
+if(lineItemId==null){
+   lineItemId = 16078336
+}
 
 // load the data
 d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/" + lineItemId, function(error, data) {
