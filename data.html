@@ -27,7 +27,8 @@
 </head>
 
 <body>
-	
+<br>
+<br>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 
 <script>
@@ -62,11 +63,28 @@ var svg = d3.select("body").append("svg")
     .attr("transform", 
           "translate(" + margin.left + "," + margin.top + ")");
 
+
+          var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
+var lineItemId = getUrlParameter('lineItemId');
+
 // load the data
-d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", function(error, data) {
+d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/" + lineItemId, function(error, data) {
 
     data.forEach(function(d) {
-
         d.region = d.region;
         d.impression = +d.impression;
     });
@@ -115,9 +133,12 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", funct
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.impression); })
       .attr("height", function(d) { return height - y(d.impression); });
-
 });
 
+
+setTimeout(function(){
+   window.location.reload(1);
+}, 5000);
 </script>
 
 </body>
