@@ -92,7 +92,7 @@ if(lineItemId==null){
 }
 
 // load the data
-d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/" + lineItemId, function(error, data) {
+d3.json("https://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/" + lineItemId, function(error, data) {
 
     data.forEach(function(d) {
         d.region = d.region;
@@ -146,8 +146,8 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/" + lineItemId, 
 });
 
 
-// setTimeout(function(){
-//    window.location.reload(1);
-// }, 5000);
+ setTimeout(function(){
+    window.location.reload(1);
+ }, 5000);
 </script>
 </body>
