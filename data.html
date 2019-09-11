@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-​
+
 <head>
 	<style>
-​
+
   .bar{
     fill: rgb(66, 97, 122);
   }
-​
+
   .bar:hover{
     fill: rgb(212, 212, 212);
   }
-​
+
 	.axis {
 	  font: 15px sans-serif;
 	}
-​
+
 	.axis path,
 	.axis line {
 	  fill: none;
 	  stroke: #000;
 	  shape-rendering: crispEdges;
 	}
-​
+
 	</style>
 </head>
-​
+
 <body>
 	
 <script src="https://d3js.org/d3.v3.min.js"></script>
-​
+
 <script>
 // set the dimensions of the canvas
 var margin = {top: 20, right: 20, bottom: 70, left: 40},
     width = 350 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
-​
-​
+
+
 // set the ranges
 var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
-​
+
 var y = d3.scale.linear().range([height, 0]);
-​
+
 // define the axis
 var xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom")
-​
-​
+
+
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left")
     .ticks(10);
-​
-​
+
+
 // add the SVG element
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -61,12 +61,12 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", 
           "translate(" + margin.left + "," + margin.top + ")");
-​
+
 // load the data
 d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", function(error, data) {
-​
+
     data.forEach(function(d) {
-​
+
         d.region = d.region;
         d.impression = +d.impression;
     });
@@ -74,8 +74,8 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", funct
   // scale the range of the data
   x.domain(data.map(function(d) { return d.region; }));
   y.domain([0, d3.max(data, function(d) { return d.impression; })]);
-​
-​
+
+
   svg.append("text")
         .attr("x", (width / 2))             
         .attr("y", 0 - (margin.top / 2))
@@ -83,7 +83,7 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", funct
         .style("font-size", "16px") 
         .style("text-decoration", "underline")  
         .text("Your Campaign's Metrics");
-​
+
   // add axis
   svg.append("g")
       .attr("class", "x axis")
@@ -94,7 +94,7 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", funct
       .attr("dx", "-.8em")
       .attr("dy", "-.55em")
       .attr("transform", "rotate(-90)" );
-​
+
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
@@ -104,8 +104,8 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", funct
       .attr("dy", ".71em")
       .style("text-anchor", "end")
       .text("# Impressions");
-​
-​
+
+
   // Add bar chart
   svg.selectAll("bar")
       .data(data)
@@ -115,9 +115,9 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/16078336", funct
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.impression); })
       .attr("height", function(d) { return height - y(d.impression); });
-​
+
 });
-​
+
 </script>
-​
+
 </body>
