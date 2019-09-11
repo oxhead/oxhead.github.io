@@ -6,6 +6,7 @@
         svg {
             display:block;
             width: 60%;
+            margin-left: 20%;
             overflow: visible;
         }
 
@@ -29,10 +30,16 @@
 	}
 
     </style>
-<a href = "https://os-172-17-154-67.ciatl1.turn.com:8443/webapp/#/amoB2C/dashboard?advertiserId=2146462618">Go Back To Dashboard</a>
-</head>
+	<div style="
+    background-color: #303030;
+    height: calc(4rem + 16px);
+    width: 100%; position: absolute; left: 0; right: 0; top: 0">
+        <div style="margin-top: 16px;margin-left: 16px">
+            <a style="padding: 12px 8px; color: white; text-decoration: none; font-size: 2rem; line-height: 2.5rem" href="https://os-172-17-154-67.ciatl1.turn.com:8443/webapp/#/amoB2C/dashboard">&lt;</a>
+        </div>
+    </div></head>
 
-<body>
+<body style="margin-top: calc(4rem + 16px);">
 <br>
 <br>
 <script src="https://d3js.org/d3.v3.min.js"></script>
@@ -143,7 +150,6 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/" + lineItemId, 
       .attr("y", function(d) { return y(d.impression); })
       .attr("height", function(d) { return height - y(d.impression); });
 });
-
 
  setTimeout(function(){
     window.location.reload(1);
