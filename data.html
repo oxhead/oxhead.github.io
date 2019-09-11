@@ -3,6 +3,12 @@
 
 <head>
 	<style>
+        svg {
+            margin: auto;
+            display:block;
+            width: 60%;
+            overflow: visible;
+        }
 
   .bar{
     fill: rgb(66, 97, 122);
@@ -23,7 +29,8 @@
 	  shape-rendering: crispEdges;
 	}
 
-	</style>
+    </style>
+
 </head>
 
 <body>
@@ -81,7 +88,7 @@ var svg = d3.select("body").append("svg")
 
 var lineItemId = getUrlParameter('lineItemId');
 if(lineItemId==null){
-   lineItemId = 16078336
+    lineItemId = 16078336
 }
 
 // load the data
@@ -139,9 +146,8 @@ d3.json("http://os-172-17-154-205.ciatl1.turn.com:8080/keyValue/" + lineItemId, 
 });
 
 
-setTimeout(function(){
-   window.location.reload(1);
-}, 5000);
+// setTimeout(function(){
+//    window.location.reload(1);
+// }, 5000);
 </script>
-
 </body>
